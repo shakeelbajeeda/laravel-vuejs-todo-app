@@ -51,6 +51,12 @@ Follow these steps to set up a development environment:
     ```bash
     php artisan serve
     ```
+
+   **Project is running on**
+    ```bash
+    http://localhost:8000
+    ```
+    Project Api Docs will be available at `http://localhost:8000/docs/api`    
    
 
 ## Setup Vuejs Application
