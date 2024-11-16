@@ -16,7 +16,7 @@ class TodoController extends Controller
     }
 
     /**
-     * Display a listing of the resource.
+     * Display a listing of the Todos.
      *
      * @return JsonResponse
      */
@@ -26,7 +26,7 @@ class TodoController extends Controller
     }
 
     /**
-     * Store a newly created resource in storage.
+     * Store a newly created todo in storage.
      *
      * @param TodoRequest $request
      * @return JsonResponse
@@ -40,7 +40,7 @@ class TodoController extends Controller
     }
 
     /**
-     * Display the specified resource.
+     * Display the specified todo.
      *
      * @param Todo $todo
      * @return JsonResponse
@@ -51,7 +51,7 @@ class TodoController extends Controller
     }
 
     /**
-     * Update the specified resource in storage.
+     * Update the specified todo in storage.
      *
      * @param TodoRequest $request
      * @param Todo $todo
@@ -66,7 +66,7 @@ class TodoController extends Controller
     }
 
     /**
-     * Remove the specified resource from storage.
+     * Remove the specified todo from storage.
      *
      * @param Todo $todo
      * @return JsonResponse
