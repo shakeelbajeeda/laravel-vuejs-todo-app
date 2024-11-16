@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Model;
 
 class Todo extends Model
@@ -23,5 +24,13 @@ class Todo extends Model
         return [
             'is_completed' => 'boolean'
         ];
+    }
+
+
+    protected function isCompleted(): Attribute
+    {
+        return Attribute::make(
+            get: fn($value) => $value ? "Completed" : "Pending",
+        );
     }
 }
